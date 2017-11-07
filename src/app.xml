@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:ctx="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd ">
+
+<bean id="eid" class="com.accenture.bean.Employee">
+<property name="name" value="vaibhav"></property>
+<property name="empid" value="11445619"></property>
+<property name="cc" ref="cid"></property>
+</bean>
+
+<bean id="cid"
+ class="com.accenture.bean.CreditCard">
+ 	<property name="cno" value="1312565412"></property>
+ 	<property name="expiry" value="10/2020"></property>
+ 	<property name="cvv" value="0"></property>
+ </bean>	
+ 
+ </beans>
